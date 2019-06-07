@@ -1,14 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import Part from './part';
 
 
 
 const Content = (props) => {
   return (
     <div>
-      <Part {props.part1} {props.exercises1} />
-      <Part {props.part2} {props.exercises2} />
-      <Part {props.part3} {props.exercises3} />
+      <Part part1={props.part1} />
+      <Part part2={props.part2} />
+      <Part part3={props.part3} />
     </div>
   )
 }
